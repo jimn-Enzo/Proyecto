@@ -1,0 +1,273 @@
+
+/* =================================
+   ESTILOS GENERALES DE LA PAGINA
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-color: #f8f4ec;
+    color: #39332e;
+    line-height: 1.7;
+}
+
+/* =================================
+   ENCABEZADO Y MENU
+================================= */
+
+header {
+    background-color: #542d38;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav h2 {
+    color: #e5c58b;
+    font-size: 27px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e5c58b;
+}
+
+/* =================================
+   PORTADA PRINCIPAL
+================================= */
+
+#inicio {
+    background: linear-gradient(
+        rgba(58, 29, 39, 0.88),
+        rgba(58, 29, 39, 0.88)
+    );
+
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+#inicio h1 {
+    font-size: 48px;
+    color: #e5c58b;
+    margin-bottom: 15px;
+}
+
+#inicio h2 {
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+#inicio p {
+    max-width: 650px;
+    margin: auto;
+    font-size: 18px;
+}
+
+/* =================================
+   SECCIONES GENERALES
+================================= */
+
+section {
+    padding: 75px 10%;
+}
+
+section h2 {
+    color: #713b4a;
+    font-size: 32px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+section p {
+    max-width: 850px;
+    margin: 0 auto 18px;
+    font-size: 17px;
+    text-align: justify;
+}
+
+/* =================================
+   HISTORIA Y MISION
+================================= */
+
+#historia,
+#mision {
+    background-color: #fffdf8;
+}
+
+#mision {
+    background-color: #eee5d8;
+}
+
+/* =================================
+   LEGADO
+================================= */
+
+#legado {
+    background-color: #fffdf8;
+}
+
+/* =================================
+   LINEA DE TIEMPO
+================================= */
+
+#cronologia {
+    background-color: #eee5d8;
+}
+
+#cronologia div {
+    max-width: 650px;
+    margin: 20px auto;
+    padding: 22px;
+    background-color: #fffdf8;
+    border-left: 5px solid #a77b45;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+#cronologia h3 {
+    color: #713b4a;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+#cronologia div p {
+    margin: 0;
+}
+
+/* =================================
+   FRASES DE SAN POMPILIO
+================================= */
+
+#frases {
+    background-color: #fffdf8;
+}
+
+blockquote {
+    max-width: 750px;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: #f0e5d6;
+    border-left: 5px solid #a77b45;
+    color: #542d38;
+    font-size: 19px;
+    font-style: italic;
+    border-radius: 5px;
+}
+
+/* =================================
+   CUESTIONARIO
+================================= */
+
+#quiz {
+    background-color: #eee5d8;
+    text-align: center;
+}
+
+button {
+    background-color: #713b4a;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #a77b45;
+}
+
+/* =================================
+   PIE DE PAGINA
+================================= */
+
+footer {
+    background-color: #542d38;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* =================================
+   ADAPTACION A CELULARES
+================================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    #inicio {
+        padding: 80px 20px;
+    }
+
+    #inicio h1 {
+        font-size: 34px;
+    }
+
+    #inicio h2 {
+        font-size: 20px;
+    }
+
+    section {
+        padding: 50px 7%;
+    }
+
+    section h2 {
+        font-size: 26px;
+    }
+}
+
+/* IMAGEN DE SAN POMPILIO */
+
+#inicio img {
+    width: 190px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 4px solid #e5c58b;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
